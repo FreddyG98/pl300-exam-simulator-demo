@@ -129,27 +129,31 @@ L'algoritmo adattivo attribuisce priorità a errori recenti, frequenza degli err
 pl300-exam-simulator-demo/
 │
 ├── index.html
-├── style.css
-├── test_script3.js
+├── README.md
+├── .gitignore
 │
-├── Domande/
-│   └── JSON uniti/
-│       ├── Topic 1.json
-│       └── Topic 2.json
+├── css/
+│   └── style.css
 │
-├── images/
-│   └── ...
+├── js/
+│   └── app.js
 │
-└── README.md
+├── data/
+│   ├── topic1_demo.json
+│   └── topic2_demo.json
+│
+└── images/
+    └── fabrikam_retail_case_study_dashboard.png
 ```
 
 | File / Cartella | Funzione |
 |---|---|
 | `index.html` | Punto di ingresso dell'applicazione |
-| `style.css` | Temi, layout, componenti UI e responsività |
-| `test_script3.js` | Logica quiz, rendering, sessioni, SRS, statistiche e filtri |
-| `Domande/JSON uniti/` | Banca domande organizzata per topic |
-| `images/` | Immagini delle domande e degli scenari |
+| `css/style.css` | Temi, layout, componenti UI e responsività |
+| `js/app.js` | Logica quiz, rendering, sessioni, SRS, statistiche e filtri |
+| `data/topic1_demo.json` | Banca demo del Topic 1 con domande di tipologia diversa |
+| `data/topic2_demo.json` | Banca demo del Topic 2 con domande collegate al case study Fabrikam Retail |
+| `images/fabrikam_retail_case_study_dashboard.png` | Immagini delle domande e degli scenari |
 
 ---
 
@@ -178,16 +182,6 @@ http://localhost:8000
 Il progetto non richiede autenticazione né backend applicativo. Risposte, statistiche e preferenze restano nel `localStorage` del browser dell'utente e non vengono inviate a servizi esterni.
 
 La versione pubblicata contiene esclusivamente contenuti dimostrativi e domande fittizie. Il simulatore non rappresenta materiale ufficiale Microsoft né garantisce la riproduzione del formato, del punteggio o dei criteri di valutazione dell'esame reale.
-
----
-
-## 🔮 Sviluppi Futuri
-
-* Internazionalizzazione dell'interfaccia.
-* Traduzione e validazione di banche domande multilingua.
-* Sincronizzazione opzionale del progresso tra dispositivi.
-* Diagnostica automatica per validare struttura e coerenza dei file JSON.
-* Statistiche avanzate per domain e tipologia di domanda.
 
 ---
 
