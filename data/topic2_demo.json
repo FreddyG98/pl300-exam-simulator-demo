@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "version": 1,
+    "totalQuestions": 5,
+    "generatedAt": "2026-08-29",
+    "topic": 2
+  },
+  "scenarios": [
+    {
+      "scenario_id": "demo_fabrikam",
+      "title": "Case study: Fabrikam Retail",
+      "text": "Fabrikam Retail vende prodotti tramite negozi fisici e un sito online. L'azienda usa Power BI per analizzare vendite, margini, scorte e prestazioni dei negozi.\n\nIl team dati riceve ogni notte file CSV dal sistema di vendita e aggiorna il modello semantico al mattino. I responsabili regionali devono vedere soltanto i negozi della propria regione.\n\nIl direttore commerciale vuole un report con una pagina riepilogativa, una pagina di dettaglio e la possibilità di analizzare le vendite nel tempo. Consulta l'allegato per il prototipo del dashboard richiesto.",
+      "media": [
+        {
+          "url": "images/fabrikam_retail_case_study_dashboard.png",
+          "caption": "Fabrikam Retail – Sales Overview (dashboard demo)"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "topic": 2,
+      "domain": "model",
+      "scenarioId": "demo_fabrikam",
+      "type": "single",
+      "text": "Devi progettare il modello dati per analizzare le vendite per prodotto, negozio e data. Quale struttura dovresti usare?",
+      "media": [],
+      "explanation": "Uno schema a stella con una tabella dei fatti Vendite e dimensioni separate per Data, Prodotto e Negozio è semplice da interrogare e da mantenere.",
+      "note": null,
+      "statements": [],
+      "options": [
+        "Uno schema a stella",
+        "Una singola tabella senza relazioni",
+        "Una relazione molti-a-molti per ogni tabella",
+        "Un modello senza tabella Data"
+      ],
+      "sourceItems": [],
+      "targets": [],
+      "correct": 0,
+      "correctAssignment": null
+    },
+    {
+      "id": 2,
+      "topic": 2,
+      "domain": "prepare",
+      "scenarioId": "demo_fabrikam",
+      "type": "multi",
+      "text": "I file CSV delle vendite arrivano ogni notte con la stessa struttura. Quali due azioni riducono il lavoro di manutenzione quando arrivano nuovi file? Ogni risposta corretta presenta una parte della soluzione.",
+      "media": [],
+      "explanation": "Il connettore Cartella consente di rilevare i file nella posizione scelta; la combinazione dei file applica una stessa query modello a ogni file con struttura compatibile.",
+      "note": null,
+      "statements": [],
+      "options": [
+        "Usare il connettore Cartella per connettersi alla posizione dei file",
+        "Usare Combina file in Power Query",
+        "Creare manualmente una query separata per ogni nuovo file",
+        "Copiare i dati in una tabella Word prima di importarli"
+      ],
+      "sourceItems": [],
+      "targets": [],
+      "correct": [0, 1],
+      "correctAssignment": null
+    },
+    {
+      "id": 3,
+      "topic": 2,
+      "domain": "visualize",
+      "scenarioId": "demo_fabrikam",
+      "type": "dropdown",
+      "text": "In base ai requisiti del direttore commerciale, seleziona il visual più appropriato per ogni esigenza.",
+      "media": [],
+      "explanation": "Un grafico a linee è adatto per individuare l'andamento mensile, mentre un grafico a barre facilita il confronto tra categorie come le regioni.",
+      "note": null,
+      "statements": [
+        {
+          "text": "Per analizzare l'andamento delle vendite mensili:",
+          "choices": [
+            "Grafico a linee",
+            "Grafico a torta",
+            "Scheda singola"
+          ],
+          "correct": 0
+        },
+        {
+          "text": "Per confrontare le vendite tra le regioni:",
+          "choices": [
+            "Grafico a barre",
+            "Casella di testo",
+            "Immagine di sfondo"
+          ],
+          "correct": 0
+        }
+      ],
+      "options": [],
+      "sourceItems": [],
+      "targets": [],
+      "correct": null,
+      "correctAssignment": null
+    },
+    {
+      "id": 4,
+      "topic": 2,
+      "domain": "deploy",
+      "scenarioId": "demo_fabrikam",
+      "type": "dragdrop",
+      "text": "Disponi nell'ordine corretto le attività per applicare la sicurezza a livello di riga ai responsabili regionali.",
+      "media": [],
+      "explanation": "Il flusso tipico è definire il filtro del ruolo nel modello, pubblicare il contenuto e poi assegnare utenti o gruppi al ruolo nel servizio Power BI.",
+      "note": "Domanda demo drag and drop relativa alla configurazione della RLS.",
+      "statements": [],
+      "options": [],
+      "sourceItems": [
+        "Assegnare gli utenti o i gruppi al ruolo nel servizio Power BI",
+        "Pubblicare il modello semantico e il report nel servizio Power BI",
+        "Definire un ruolo RLS con un filtro sulla regione",
+        "Cambiare il tema del report"
+      ],
+      "targets": [
+        "Passaggio 1",
+        "Passaggio 2",
+        "Passaggio 3"
+      ],
+      "correct": null,
+      "correctAssignment": [2, 1, 0]
+    },
+    {
+      "id": 5,
+      "topic": 2,
+      "domain": "model",
+      "scenarioId": "demo_fabrikam",
+      "type": "yesno",
+      "text": "Il margine, calcolato come ricavi meno costi e utilizzato in più pagine del report, dovrebbe essere creato come misura esplicita.",
+      "media": [],
+      "explanation": "Sì. Una misura esplicita centralizza la logica di calcolo e viene valutata dinamicamente nel contesto di filtri del visual.",
+      "note": null,
+      "statements": [],
+      "options": [
+        "Sì",
+        "No"
+      ],
+      "sourceItems": [],
+      "targets": [],
+      "correct": 0,
+      "correctAssignment": null
+    }
+  ]
+}
