@@ -12,20 +12,8 @@ const IS_TOUCH_DEVICE = (
 
 // File JSON di banca domande pre-caricati sul server
 const SERVER_BANK_FILES = [
-  "Domande/JSON uniti/Topic 1.json",
-  "Domande/JSON uniti/Topic 2.json",
-  "Domande/JSON uniti/Topic 3.json",
-  "Domande/JSON uniti/Topic 4.json",
-  "Domande/JSON uniti/Topic 5.json",
-  "Domande/JSON uniti/Topic 6.json",
-  "Domande/JSON uniti/Topic 7.json",
-  "Domande/JSON uniti/Topic 8.json",
-  "Domande/JSON uniti/Topic 9.json",
-  "Domande/JSON uniti/Topic 10.json",
-  "Domande/JSON uniti/Topic 11.json",
-  "Domande/JSON uniti/Topic 12.json",
-  "Domande/JSON uniti/Topic 13.json",
-  "Domande/JSON uniti/Topic 14.json"
+  './data/topic1_demo.json',
+  './data/topic2_demo.json'
 ];
 
 let SCENARIOS = loadJSONSafe(SCENARIOS_KEY, {});
