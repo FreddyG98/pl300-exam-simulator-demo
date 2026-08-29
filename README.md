@@ -65,7 +65,7 @@ pl300-exam-simulator-demo/
 ├── images/                 # Allegati visivi per i Case Study
 └── README.md               # Documentazione del progetto
 ```
-
+### Struttura JSON Domande
 ```text
 {
   "meta": { "topic": 1, "version": 1.0 },
