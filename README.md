@@ -64,6 +64,7 @@ pl300-exam-simulator-demo/
 │   └── topic2_demo.json    # Dataset demo: Model the Data (5 domande)
 ├── images/                 # Allegati visivi per i Case Study
 └── README.md               # Documentazione del progetto
+```
 
 ```text
 {
