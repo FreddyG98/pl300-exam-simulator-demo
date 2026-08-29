@@ -1,9 +1,5 @@
 # 📊 Microsoft PL-300 Exam Practice & Review Platform (Demo Version)
 
-[![Live Demo](https://img.shields.io/badge/Demo-Live%20App-brightgreen?style=for-the-badge&logo=github)](https://FreddyG98.github.io/pl300-exam-simulator-demo/)
-[![Tech Stack](https://img.shields.io/badge/Stack-VanillaJS%20%7C%20HTML5%20%7C%20CSS3-blue?style=for-the-badge)](https://developer.mozilla.org/)
-[![License](https://img.shields.io/badge/License-MIT-orange?style=for-the-badge)](LICENSE)
-
 **PL-300 Quiz Trainer** è un'applicazione web interattiva, lightweight e a zero dipendenze sviluppata per la simulazione e il ripasso strutturato dell'esame di certificazione **Microsoft Certified: Power BI Data Analyst Associate (PL-300)**.
 
 Il progetto nasce con l'obiettivo di offrire un'esperienza di studio fedele all'esame ufficiale Microsoft, integrando algoritmi di apprendimento avanzati per massimizzare la memorizzazione dei concetti di data modeling, DAX e data preparation.
@@ -23,7 +19,7 @@ La piattaforma è progettata attorno a tre pilastri fondamentali: **interattivit
 
 ### 1. Supporto Multimodale per le Tipologie di Quesito Microsoft
 L'interfaccia gestisce nativamente tutte le strutture di domanda previste dall'esame PL-300:
-* **Scelta Singola (`single`) e Scelta Multipla (`multi`):** Selezione standard delle opzioni con opzioni di verifica immediata.
+* **Scelta Singola (`single`) e Scelta Multipla (`multi`):** Selezione standard delle opzioni con verifica immediata.
 * **Quesiti Condizionali (`yesno`):** Sequenze di domande con regole rigide di conferma e locking delle risposte.
 * **Menu a Tendina Multipli (`dropdown`):** Inserimento di formule DAX o configurazioni completando opzioni all'interno del testo.
 * **Drag & Drop (`dragdrop`):** Modulo d'interazione per l'ordinamento di passaggi operativi o l'associazione di concetti, ottimizzato sia per mouse che per schermi touch su dispositivi mobile.
@@ -42,7 +38,7 @@ Per evitare l'apprendimento mnemonico passivo, la piattaforma implementa un sist
 ### 3. Modalità di Fruizione e Dashboard
 * **Pratica Libera:** Configurazione su misura per argomenti (*Prepare Data*, *Model Data*, *Visualize & Analyze*, *Deploy & Maintain*), per tipologia di domanda o per stato (*Solo domande errate*).
 * **Simulazione Esame:** Timer dinamico, restrizioni ufficiali sulle risposte confermate e report di valutazione con punteggio ponderato su scala 100–1000 (soglia pass: 700).
-* **Modulo Spiegazioni & Feedback:** Spiegazioni dettagliate per ogni quesito, con evidenziazione dei concetti chiave e riferimenti alle documentazioni ufficiali Microsoft Learn.
+* **Modulo Spiegazioni & Feedback:** Spiegazioni dettagliate per ogni quesito, con evidenziazione dei concetti chiave e riferimenti alla documentazione ufficiale Microsoft Learn.
 * **Temi Interfaccia:** Supporto nativo per la modalità *Chiaro*, *Scuro* e *Sincronizzazione Automatica* con il sistema operativo.
 
 ---
