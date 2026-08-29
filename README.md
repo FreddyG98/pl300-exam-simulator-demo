@@ -58,10 +58,9 @@ La demo pubblica è disponibile tramite **GitHub Pages**:
 * Yes/No (`yesno`)
 * Dropdown con statement multipli (`dropdown`)
 * Drag & drop (`dragdrop`)
-* Hotspot e hotspot su immagine
 * Case study con scenario espandibile, testo e allegati
 
-Le domande drag & drop supportano il trascinamento su desktop e il meccanismo **tap-to-move** su smartphone.
+(Le domande drag & drop supportano il trascinamento su desktop e il meccanismo **tap-to-move** su smartphone)
 
 ### 3. Pratica Libera e Filtri
 
